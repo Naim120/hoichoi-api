@@ -82,7 +82,7 @@ echo $api;
 
 }
 else{
-  $ex= array("error" => "Something went wrong, Check URL and Parameters", "created_by" => "Avishkar Patil" );
+  $ex= array("error" => "Something went wrong, Check URL and Parameters !", "created_by" => "Avishkar Patil" );
   $error =json_encode($ex);
 
   echo $error;
