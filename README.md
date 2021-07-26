@@ -2,14 +2,14 @@
 
 <p align="center">  <b>Its a Hoichoi Platforn API It Will get All data in json with Streamable Links </b> <br><br><b> 🌟 Start This Repositry Befor Copying 😎</b></p>
 
-<h3 align="center"><i>HoiCHoi Premium Player:</i> <a href='https://streamavi.ml/hoichoi/'><i>Here</i></a> </h3><br>
-
 > ***🚸 This is Just For Educational Purpose*** <br>
 > ***☺ If This Out of Your Policy Contact me***
 
 <br>
 
 ## How To Use :
+
+- *Put Your HoiChoi Account Details In Auth.php*
 
 <h3>🔐 Method :</h3>
 
@@ -19,8 +19,6 @@
 ♢ Copy URL and Just Paste After Your link</h4>
 
 ```py
-   http://streamavi.ml/hoichoi/api.php?c=HOICHOI_URL
-   
    http://localhost/?c=HOICHOI_URL
 ```
 
