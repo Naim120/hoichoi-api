@@ -10,8 +10,7 @@ $pid = str_replace('https://www.hoichoi.tv/', '/', $url);
 
 $hlink ="https://prod-api-cached-2.viewlift.com/content/pages?path=$pid&site=hoichoitv&includeContent=true&moduleOffset=0&moduleLimit=4&languageCode=en&countryCode=IN";
 
-$auth = file_get_contents("https://streamavi.ml/hoichoi/auth.php");  // Change this Patch according to Your Server URL
-
+$auth = file_get_contents("auth.php");
 $curl = curl_init();
 curl_setopt_array($curl, array(
   CURLOPT_URL => $hlink,
@@ -73,7 +72,7 @@ $h720 = $hoichoi['video']['streamingInfo']['videoAssets']['mpeg'][0]['url']; // 
 
  $apii = array("created_by" => "Avishkar Patil", "id" => $id, "lang" => $lang, "title" => $title, "description" => $des, "landscape" => $land, "portrait" => $pro, "hls" => $hls, "270p" => $h270, "360p" => $h360, "720p" => $h720, "subtitle" => $srt);
 
- $api =json_encode($apii, JSON_UNESCAPED_SLASHES);
+ $api =json_encode($apii, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
 
 header("X-UA-Compatible: IE=edge");
