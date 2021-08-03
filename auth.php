@@ -4,8 +4,8 @@
 
 // Put Your Email and Password Below
 
-$email = "sknaimuddin234@gmail.com"; // Put Your Email
-$password = "iamking12"; // Put Your Password
+$email = ""; // Put Your Email
+$password = ""; // Put Your Password
 
 $curl = curl_init();
 
